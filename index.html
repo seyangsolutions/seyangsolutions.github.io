@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>주식회사 세양솔루션</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="주식회사 세양솔루션(SEYANG SOLUTIONS CO., LTD.) 공식 홈페이지 · 회사 공고">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap">
+<style>
+/* Layout: 단일 컬럼 공문서형 — 회사 표기 → 공고 게시판 → 공고방법 → 회사 정보 */
+:root{
+  --bg:#f5f7f7;
+  --paper:#ffffff;
+  --ink:#16232a;
+  --muted:#5b6a71;
+  --rule:#d5dde0;
+  --accent:#1f5a6b;
+  --accent-soft:#e3eef1;
+  --f-display:"Gowun Batang","Nanum Myeongjo",serif;
+  --f-body:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f171b;--paper:#152128;--ink:#e3eaed;--muted:#97a7ae;--rule:#2a3a42;--accent:#7fbccc;--accent-soft:#1c3038;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f171b;--paper:#152128;--ink:#e3eaed;--muted:#97a7ae;--rule:#2a3a42;--accent:#7fbccc;--accent-soft:#1c3038;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:var(--f-body);font-size:16px;line-height:1.7;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));
+  padding-right:max(16px, env(safe-area-inset-right, 0px));
+  padding-block:0;
+}
+.wrap{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:56px;padding-block:56px 40px}
+header{display:flex;flex-direction:column;gap:10px;border-bottom:2px solid var(--ink);padding-bottom:28px}
+.en{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:500}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(30px,6vw,42px);line-height:1.25;margin:0;text-wrap:balance}
+.tag{color:var(--muted);margin:0}
+nav{display:flex;flex-wrap:wrap;gap:6px 20px;font-size:14px}
+nav a{color:var(--accent);text-decoration:none;font-weight:500}
+nav a:hover,nav a:focus-visible{text-decoration:underline}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+section{display:flex;flex-direction:column;gap:18px}
+h2{font-family:var(--f-display);font-size:24px;margin:0;display:flex;align-items:baseline;gap:12px}
+h2 small{font-family:var(--f-body);font-size:12px;letter-spacing:.14em;color:var(--muted);font-weight:500}
+p{margin:0;max-width:65ch}
+
+/* 공고 게시판 */
+.board{background:var(--paper);border:1px solid var(--rule);border-radius:4px}
+.board-head,.notice{display:grid;grid-template-columns:5.5rem 1fr 7rem;gap:12px;padding:12px 18px;align-items:baseline}
+.board-head{font-size:12px;letter-spacing:.08em;color:var(--muted);border-bottom:1px solid var(--rule);font-weight:600}
+.notice{border-bottom:1px solid var(--rule)}
+.notice:last-child{border-bottom:0}
+.notice .no,.notice time{font-variant-numeric:tabular-nums;color:var(--muted);font-size:14px}
+.notice .title{min-width:0}
+.notice details summary{cursor:pointer;font-weight:500}
+.notice details .body{margin-top:10px;font-size:15px;white-space:pre-line}
+.empty{padding:36px 18px;text-align:center;color:var(--muted);font-size:15px}
+.board-head span:last-child,.notice time{text-align:right}
+
+/* 공고방법 */
+.clause{background:var(--accent-soft);border-left:3px solid var(--accent);padding:18px 20px;border-radius:0 4px 4px 0;display:flex;flex-direction:column;gap:8px}
+.clause .label{font-size:12px;letter-spacing:.12em;color:var(--accent);font-weight:600}
+.clause p{font-family:var(--f-display);font-size:17px;line-height:1.8}
+
+/* 회사 정보 */
+dl{margin:0;display:grid;grid-template-columns:8rem 1fr;border-top:1px solid var(--rule)}
+dt,dd{margin:0;padding:12px 0;border-bottom:1px solid var(--rule)}
+dt{color:var(--muted);font-size:14px;font-weight:500}
+dd{min-width:0}
+dd ul{margin:0;padding-left:1.1em}
+
+footer{border-top:1px solid var(--rule);padding-top:20px;font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+
+@media (max-width:520px){
+  .wrap{gap:44px;padding-block:36px 32px}
+  .board-head{display:none}
+  .notice{grid-template-columns:1fr auto;padding:14px 16px}
+  .notice .no{display:none}
+  dl{grid-template-columns:1fr}
+  dt{padding-bottom:0;border-bottom:0}
+  dd{padding-top:2px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <span class="en">SEYANG SOLUTIONS CO., LTD.</span>
+  <h1>주식회사 세양솔루션</h1>
+  <p class="tag">회사 공고 및 기본 정보</p>
+  <nav aria-label="바로가기">
+    <a href="#notices">공고</a>
+    <a href="#method">공고방법</a>
+    <a href="#company">회사 정보</a>
+  </nav>
+</header>
+
+<section id="notices" aria-labelledby="h-notices">
+  <h2 id="h-notices">공고 <small>NOTICES</small></h2>
+  <div class="board">
+    <div class="board-head"><span>번호</span><span>제목</span><span>게시일</span></div>
+
+    <!--
+      ▼ 공고 추가 방법: 아래 블록을 복사해 이 주석 바로 아래(맨 위)에 붙이고,
+        번호·제목·날짜·본문만 바꾼 뒤 '등록된 공고가 없습니다' 줄을 삭제합니다.
+
+    <article class="notice">
+      <span class="no">제2027-1호</span>
+      <div class="title">
+        <details>
+          <summary>제1기 결산공고 (대차대조표)</summary>
+          <div class="body">상법 제449조 제3항에 의하여 제1기 결산 대차대조표를 다음과 같이 공고합니다.
+
+(본문)
+
+2027년 3월 31일
+주식회사 세양솔루션
+대표이사 ○○○</div>
+        </details>
+      </div>
+      <time datetime="2027-03-31">2027.03.31</time>
+    </article>
+    -->
+
+    <p class="empty">등록된 공고가 없습니다.</p>
+  </div>
+</section>
+
+<section id="method" aria-labelledby="h-method">
+  <h2 id="h-method">공고방법 <small>정관</small></h2>
+  <div class="clause">
+    <span class="label">회사의 공고</span>
+    <p>회사의 공고는 회사의 인터넷 홈페이지(https://www.seyangsolutions.co.kr)에 게재한다. 다만, 전산장애 또는 그 밖의 부득이한 사유로 회사의 인터넷 홈페이지에 공고를 할 수 없는 때에는 충청투데이에 게재한다.</p>
+  </div>
+</section>
+
+<section id="company" aria-labelledby="h-company">
+  <h2 id="h-company">회사 정보 <small>COMPANY</small></h2>
+  <dl>
+    <dt>상호</dt><dd>주식회사 세양솔루션</dd>
+    <dt>영문 상호</dt><dd>SEYANG SOLUTIONS CO., LTD.</dd>
+    <dt>본점</dt><dd>세종특별자치시 전의면</dd>
+    <dt>사업 목적</dt>
+    <dd><ul>
+      <li>경영컨설팅 및 교육</li>
+      <li>소프트웨어 개발·공급 및 자문</li>
+      <li>전기기기·산업장비 유지보수 및 도소매</li>
+      <li>영상·디지털 콘텐츠 제작 및 유통</li>
+      <li>전자상거래</li>
+    </ul></dd>
+  </dl>
+</section>
+
+<footer>
+  <span>© 주식회사 세양솔루션</span>
+  <span>seyangsolutions.co.kr</span>
+</footer>
+
+</div>
+</body>
+</html>
