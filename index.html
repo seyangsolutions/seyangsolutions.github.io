@@ -79,7 +79,8 @@ dl{margin:0;display:grid;grid-template-columns:8rem 1fr;border-top:1px solid var
 dt,dd{margin:0;padding:12px 0;border-bottom:1px solid var(--rule)}
 dt{color:var(--muted);font-size:14px;font-weight:500}
 dd{min-width:0}
-dd ol{margin:0;padding-left:1.4em}
+dd ol{margin:0;padding-left:0;list-style:none}
+dd ol li::before{content:"1. "}
 
 footer{border-top:1px solid var(--rule);padding-top:20px;font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
 
